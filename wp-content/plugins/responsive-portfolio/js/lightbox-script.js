@@ -1,0 +1,1 @@
+jQuery('.weblizar-portfolio-grid').rebox({ selector: 'a' });
