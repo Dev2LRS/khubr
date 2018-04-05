@@ -1,18 +1,18 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
-$to      = 'nandni.cloud@gmail.com';
-$subject = 'the subject';
-$message = 'hello';
-$headers = 'From:nandni.cloud@gmail.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+ini_set('display_errors', '1');
+require_once('wp-load.php');
 
-$success =mail($to, $subject, $message, $headers);
+$headers = 'From:' . "nandni.cloud@gmail.com";
 
-if(!$success) {
-   print_r(error_get_last());
-}else{
-	echo "sent";
+if(wp_mail('nandni.cloud@gmail.com', 'test', 'muy test', $headers))
+{
+echo "sending mail test";
 }
-?> 
+else
+{
+     echo "not";
+}
+
+
+?>
