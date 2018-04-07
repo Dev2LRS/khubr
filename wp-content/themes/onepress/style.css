@@ -89,6 +89,99 @@ input,
 textarea {
   font: inherit;
 }
+#wpmudev-chat-box-bottom_corner div.wpmudev-chat-module-messages-list div.wpmudev-chat-row{
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ffdb99;
+border-top-color: rgb(228, 135, 19);
+border-right-color: rgb(228, 135, 19);
+border-bottom-color: rgb(228, 135, 19);
+border-left-color: rgb(228, 135, 19);
+margin-top: 2px;
+background-color: #e48713;
+color: #000;
+display: inline-block;
+float: right;
+clear: both;
+margin-bottom: 3px;
+position: relative;
+right: 30px;
+max-width: 82%;
+word-wrap: break-word;
+}
+#wpmudev-chat-box-bottom_corner div.wpmudev-chat-module-header{
+	color: #000;
+    text-align: center;
+	height:35px;
+}
+div.wpmudev-chat-box p{
+	margin: 2px 9px!important;
+}
+div.wpmudev-chat-box div.wpmudev-chat-module-users-list.wpmudev-chat-users-list-style-split ul{
+    padding:0 12px!important;
+   
+}
+#wpmudev-chat-box-bottom_corner{
+	    border-radius: 10px;
+}
+#wpmudev-chat-box-bottom_corner ul.wpmudev-chat-actions-menu ul.wpmudev-chat-actions-settings-menu li{
+	background-color: #e48713!important;
+    border-left: none!important;
+    border-right: none!important;
+    border-bottom: none!important;
+}
+div.wpmudev-chat-box .chat-login-wrap{
+	display: block;
+    padding: 47px 12px 26px;
+    background-color: #f3f3f2;
+    overflow: hidden;
+}
+div.wpmudev-chat-box .wpmudev-chat-module{
+
+    color: #000;
+	
+}
+textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"]{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 32px;
+    color: #60686e;
+    
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: normal;
+    background-color: #fafafa;
+    resize: none;
+     width: 100%!important;
+    transition: background-color .2s ease,box-shadow .2s ease;
+}
+div.wpmudev-chat-box-invite-pending div.wpmudev-chat-module-invite-prompt p.wpmudev-chat-invite-buttons button.wpmudev-chat-invite-accept, div.wpmudev-chat-box div.wpmudev-chat-module-login p.wpmudev-chat-login-buttons button.wpmudev-chat-login-submit{
+	font-weight: normal !important;
+    border-radius: 32px !important;
+    padding-top: 8px !important;
+    padding-bottom: 7px !important;
+    padding-left: 40px !important;
+    padding-right: 33px !important;
+    background: #dd8b00;
+    color: black;
+}
+div.wpmudev-chat-box-invite-pending div.wpmudev-chat-module-invite-prompt p.wpmudev-chat-invite-buttons button, div.wpmudev-chat-box div.wpmudev-chat-module-login p.wpmudev-chat-login-buttons button{
+	border-radius: 32px !important;
+    padding-top: 8px !important;
+    padding-bottom: 7px !important;
+    padding-left: 40px !important;
+    padding-right: 33px !important;
+    background: #dd8b00;
+    color: black;
+}
+div.wpmudev-chat-box .login-message{
+	font-size:16px;
+}
+.wpmudev-chat-title-text{
+	font-size: 25px;
+	
+}
 
 ::-moz-selection {
   background: #000000;

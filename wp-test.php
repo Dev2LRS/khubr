@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
-require_once('wp-load.php');
+ require_once('wp-load.php');
 
 $headers = 'From:' . "nandni.cloud@gmail.com";
 
@@ -13,6 +13,7 @@ else
 {
      echo "not";
 }
+
 
 
 ?>

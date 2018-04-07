@@ -1484,7 +1484,7 @@ function wpmudev_chat_form_section_polling_content( $form_section = 'global' ) {
 		<?php
 		if ($_use_plugin_ajax !== true) {
 		?>
-		<p class="wpmudev-chat-error"><?php _e( "The Chat Plugin directory must be writeable during activation in order to use the faster 'Plugin AJAX' option.", $wpmudev_chat->translation_domain );
+		<p class="wpmudev-chat-error"><?php _e( "The Chat Plugin directory must be writeable during activation in order to use the faster 'Plugin AJAX' option.", $wpmudev_chat->translation_domain );	  							 					 			
 			}
 			?>
 		<table border="0" cellpadding="4" cellspacing="0">

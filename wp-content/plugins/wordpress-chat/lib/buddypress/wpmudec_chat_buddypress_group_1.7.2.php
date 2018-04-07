@@ -232,7 +232,7 @@ class WPMUDEV_Chat_BuddyPress extends BP_Group_Extension {
 			//	$sql_str = $wpdb->prepare("UPDATE ". WPMUDEV_Chat::tablename('log') ." SET chat_id=%s WHERE chat_id=%s;", $chat_id, $atts['id']);
 			//	$wpdb->query($sql_str);
 			//
-			//	$sql_str = $wpdb->prepare("UPDATE ". WPMUDEV_Chat::tablename('message') ." SET chat_id=%s WHERE chat_id=%s;", $chat_id, $atts['id']);	  							 					 			
+			//	$sql_str = $wpdb->prepare("UPDATE ". WPMUDEV_Chat::tablename('message') ." SET chat_id=%s WHERE chat_id=%s;", $chat_id, $atts['id']);
 			//	$wpdb->query($sql_str);
 			//
 			//	$sql_str = $wpdb->prepare("UPDATE ". WPMUDEV_Chat::tablename('users') ." SET chat_id=%s WHERE chat_id=%s;", $chat_id, $atts['id']);
