@@ -124,6 +124,10 @@ div.wpmudev-chat-box div.wpmudev-chat-module-users-list.wpmudev-chat-users-list-
 #wpmudev-chat-box-bottom_corner{
 	    border-radius: 10px;
 }
+div.wpmudev-chat-box.wpmudev-chat-box-site{
+	    border-radius: 10px;
+}
+
 #wpmudev-chat-box-bottom_corner ul.wpmudev-chat-actions-menu ul.wpmudev-chat-actions-settings-menu li{
 	background-color: #e48713!important;
     border-left: none!important;
