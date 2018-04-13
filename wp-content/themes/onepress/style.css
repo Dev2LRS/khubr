@@ -2485,6 +2485,7 @@ section > .customize-partial-edit-shortcut button {
   .hero-content-style1 .btn {
     display: inline-block;
   }
+  #bitnami-close-banner-button {display: block !important;}
 }
 .hero-content-style1 a:active, .hero-content-style1 a:focus, .hero-content-style1 .btn:active, .hero-content-style1 .btn:focus {
   outline: none;
@@ -4227,4 +4228,7 @@ img.mfp-img {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
+}
+.profile .bp-widget h2 {
+    display: none;
 }
