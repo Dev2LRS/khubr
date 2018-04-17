@@ -68,6 +68,8 @@ do_action( 'onepress_site_end' );
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script>
+jQuery("#geodir_map_v3_home_map_1_search_string").attr("placeholder","Insert place and enter");
+</script>
 </body>
 </html>
