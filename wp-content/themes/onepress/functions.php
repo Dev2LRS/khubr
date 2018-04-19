@@ -175,6 +175,11 @@ function onepress_widgets_init() {
 }
 add_action( 'widgets_init', 'onepress_widgets_init' );
 
+add_action( 'admin_enqueue_scripts', 'load_custom_script' );
+function load_custom_script() {
+    wp_enqueue_script('custom_js_script', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js', array('jquery'));
+}
+
 /**
  * Enqueue scripts and styles.
  */
@@ -191,6 +196,7 @@ function onepress_scripts() {
 	wp_enqueue_style( 'onepress-fa', get_template_directory_uri() .'/assets/css/font-awesome.min.css', array(), '4.7.0' );
 	wp_enqueue_style( 'onepress-bootstrap', get_template_directory_uri() .'/assets/css/bootstrap.min.css', false, $version );
 	wp_enqueue_style( 'onepress-style', get_template_directory_uri().'/style.css' );
+	wp_enqueue_style('jquery_ui_css', '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
 
     $custom_css = onepress_custom_inline_style();
     wp_add_inline_style( 'onepress-style', $custom_css );
@@ -198,6 +204,9 @@ function onepress_scripts() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'onepress-js-plugins', get_template_directory_uri() . '/assets/js/plugins.js', array( 'jquery' ), $version, true );
 	wp_enqueue_script( 'onepress-js-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), $version, true );
+	wp_enqueue_script('jquery_ui_js', '//code.jquery.com/ui/1.12.1/jquery-ui.js');
+
+
 
     // Animation from settings.
     $onepress_js_settings = array(
@@ -432,3 +441,5 @@ require get_template_directory() . '/inc/customizer.php';
  * Add theme info page
  */
 require get_template_directory() . '/inc/dashboard.php';
+
+

@@ -68,8 +68,13 @@ do_action( 'onepress_site_end' );
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
 jQuery("#geodir_map_v3_home_map_1_search_string").attr("placeholder","Insert place and enter");
+jQuery( function(jQuery) {
+    jQuery( "#wpmudev-chat-box-bottom_corner" ).draggable();
+  } );
 </script>
 </body>
 </html>
